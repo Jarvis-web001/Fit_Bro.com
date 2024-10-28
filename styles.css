@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+    font-style: oblique;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+nav .shop-btn {
+    padding: 0.5rem 1rem;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+}
+
+nav .shop-btn:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero {
+    /*background-image: -moz-element("gym.jpg");*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: f9f9f9;
+    height: 90vh;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 1rem;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.cta-btn {
+    padding: 1rem 2rem;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: #444;
+}
+
+.hero-image {
+    mix-blend-mode: multiply;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hero-image img {
+   
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}

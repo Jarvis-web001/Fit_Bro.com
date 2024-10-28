@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Home</title>
+    <style>
+        /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #fff; /* Changed from black to white */
+    color: #333; /* Darker text color for readability */
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd; /* Add subtle border for separation */
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: #333; /* Darker text color */
+}
+
+nav a {
+    color: #333; /* Darker color for contrast */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1em;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+    color: #FFD700; /* Yellow hover color */
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.8); /* Soft yellow glow */
+}
+
+/* Banner */
+.banner {
+    background-color:#c1d253c0;
+    color: #333;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+    color: #555; /* Slightly lighter shade */
+}
+
+/* Services */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f8f8; /* Light gray for subtle contrast */
+    color: #333;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services .service {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff; /* White background */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services .service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5); /* Yellow glow on hover */
+    color: #FFD700; /* Yellow text color on hover */
+}
+
+.services .service h3 {
+    color: #333;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* Testimonials */
+.testimonials {
+    padding: 40px 20px;
+    background: #c1d253c0; /* Light gray for contrast */
+    color: #333;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.testimonials .testimonial {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background: #fff; /* White background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.testimonials .testimonial:hover {
+    transform: scale(1.10);
+    box-shadow: 0 4px 15px rgba(209, 81, 223, 0.5); /* Yellow glow on hover */
+}
+
+.testimonials .testimonial p {
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #fff; /* White background */
+    color: #777;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd; /* Subtle border for separation */
+    margin-top: 40px;
+}
+
+.highlight:hover {
+            background-color: #c1d253c0;; /* Slightly darker on hover */
+            transform: scale(1.05); /* Slightly enlarges on hover */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="highlight-link">
+            <div class="highlight">StayHard</div>
+        </a>
+        
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Testimonials</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h2>Welcome to Our Gym</h2>
+        <p>Your journey to fitness starts here. Join us for a healthier life!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Personal Training</h3>
+            <p>Get personalized workout plans and one-on-one coaching.</p>
+        </div>
+        <div class="service">
+            <h3>Group Classes</h3>
+            <p>Join our exciting group classes to stay motivated and fit.</p>
+        </div>
+        <div class="service">
+            <h3>Nutrition Advice</h3>
+            <p>Receive guidance from certified nutrition experts.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Members Say</h2>
+        <div class="testimonial">
+            <p>"This gym has completely transformed my fitness routine!"</p>
+            <p>- Alex</p>
+        </div>
+        <div class="testimonial">
+            <p>"The trainers are professional and very supportive."</p>
+            <p>- Jamie</p>
+        </div>
+        <div class="testimonial">
+            <p>"I love the group classes – they keep me motivated!"</p>
+            <p>- Taylor</p>
+        </div>
+    </section>
+
+    
+
+</body>
+</html>

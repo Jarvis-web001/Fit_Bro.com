@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Gym</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px 20px;
+            background-color: #f8f8f8;
+            text-align: center;
+            color: #444;
+        }
+
+        .about h2 {
+            font-size: 2.8em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .about p {
+            font-size: 1.15em;
+            line-height: 1.8;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        .about span {
+            color: #333;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .about span:hover {
+            color: #ff6347; /* Hover color */
+        }
+
+        /* Additional Information Boxes */
+        .info-boxes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .info-box {
+            background-color: #fff;
+            padding: 20px;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(255, 99, 71, 0.3); /* Soft hover shadow */
+        }
+
+        .info-box h3 {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Highlight Button */
+        .highlight-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+        }
+
+        .highlight {
+            padding: 0.5em 1.5em;
+            background-color: #ff6347;
+            color: #fff;
+            font-size: 1.1em;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .highlight:hover {
+            background-color: #e55337; /* Slightly darker on hover */
+            transform: scale(1.05); /* Slightly enlarges on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Our Gym</h2>
+        <p>
+            Welcome to <span>Stay Hard</span>, where fitness meets inspiration! Our mission is to create a supportive and 
+            motivating environment for individuals of all fitness levels. With over a decade of experience, our dedicated 
+            team of <span>certified trainers</span> and wellness experts are here to help you embrace a healthier lifestyle.
+            We offer personalized programs, a variety of group classes, and expert nutritional guidance to ensure that you 
+            not only reach but exceed your fitness goals. At <span>Stay Hard</span>, your journey to a stronger, healthier, 
+            and more balanced life begins.
+        </p>
+
+        <!-- Additional Information Boxes -->
+        <div class="info-boxes">
+            <div class="info-box">
+                <h3>Our Mission</h3>
+                <p>Empowering our members to achieve their fitness goals through personalized training, a supportive community, and a commitment to wellness.</p>
+            </div>
+            <div class="info-box">
+                <h3>State-of-the-Art Equipment</h3>
+                <p>We provide the latest fitness equipment and technology to enhance your training experience and help you achieve better results.</p>
+            </div>
+            <div class="info-box">
+                <h3>Certified Trainers</h3>
+                <p>Our trainers are certified professionals with expertise in various fitness disciplines, ready to guide you every step of the way.</p>
+            </div>
+            <div class="info-box">
+                <h3>Community Support</h3>
+                <p>Become part of a vibrant, motivated community that supports your fitness journey and celebrates your achievements.</p>
+            </div>
+        </div>
+
+        <!-- Highlight Button with Link -->
+        <a href="index.html" class="highlight-link">
+            <div class="highlight">Join Us Today</div>
+        </a>
+    </section>
+
+</body>
+</html>

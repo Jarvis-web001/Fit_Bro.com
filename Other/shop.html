@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Shop & Footer</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Shop Section Styling */
+        .shop-section {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        .shop-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 15px;
+            text-align: left;
+        }
+
+        .product-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            color: #ff6347;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        /* Button Style */
+        .buy-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #ff6347;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #e55337;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 15px;
+            list-style-type: none;
+        }
+
+        .footer-links a {
+            color: #ff6347;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .footer p {
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Shop Section -->
+    <section class="shop-section" id="shop">
+        <h2>Our Gym Shop</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-item">
+                <img src="dumbbels.jpg" alt="Dumbbells" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Dumbbells</div>
+                    <div class="product-price">$20</div>
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="mat.jpeg" alt="Yoga Mat" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Yoga Mat</div>
+                    <div class="product-price">$15</div>
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="water.jpg" alt="Water Bottle" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Water Bottle</div>
+                    <div class="product-price">$10</div>
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="gloves.jpg" alt="Gym Gloves" class="product-image">
+                <div class="product-info">
+                    <div class="product-title">Gym Gloves</div>
+                    <div class="product-price">$12</div>
+                    <a href="#" class="buy-btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="class.html">Classes</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2023 Gym Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contact Section Styling */
+        .contact-section {
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            color: #333;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Contact Item Styling */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ff6347;
+            color: #fff;
+        }
+
+        .contact-icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            color: #ff6347;
+            transition: color 0.3s;
+        }
+
+        /* Contact Icon Hover Effect */
+        .contact-item:hover .contact-icon {
+            color: #fff;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h3 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .submit-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #ff4500;
+        }
+
+        /* Google Map Styling */
+        .map-container {
+            margin: 30px auto;
+            max-width: 600px;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .contact-section h2 {
+                font-size: 2em;
+            }
+
+            .contact-info {
+                font-size: 1em;
+            }
+
+            .contact-form {
+                padding: 15px;
+            }
+
+            .contact-form h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <!-- Contact Item 1: Phone -->
+            <a href="tel:+1234567890" class="contact-item" aria-label="Call us at +91 7365820190">
+                <span class="contact-icon">📞</span>
+                +91 7365820190
+            </a>
+
+            <!-- Contact Item 2: Email -->
+            <a href="mailto:info@gymname.com" class="contact-item" aria-label="Email us at StayHardFitness@gmail.com">
+                <span class="contact-icon">📧</span>
+                StayHardFitness@gmail.com
+            </a>
+
+            <!-- Contact Item 3: Address -->
+            <a href="https://goo.gl/maps/yourgym" class="contact-item" target="_blank" aria-label="Find us at Jangal Para Bazar, Hooghly,712701">
+                <span class="contact-icon">📍</span>
+                Jangal Para Bazar, Hooghly,712701
+            </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Get in Touch</h3>
+            <form action="your-server-endpoint" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14719.642890161254!2d88.19740524690455!3d22.731559470057572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8871e0fd86bcd%3A0x492730f7c06cdfed!2sJangalpara%2C%20West%20Bengal%20712701!5e0!3m2!1sen!2sin!4v1730096708381!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+        </div>
+    </section>
+
+</body>
+</html>

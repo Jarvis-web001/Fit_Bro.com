@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Classes</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Gym Classes Section */
+        .classes {
+            padding: 50px 20px;
+            background-color: #f0f0f5;
+            text-align: center;
+            color: #333;
+        }
+
+        .classes h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .class-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .class-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .class-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .class-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff6347;
+        }
+
+        .class-description {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Button Style */
+        .join-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff6347;
+            color: #fff;
+            font-size: 1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .join-btn:hover {
+            background-color: #e55337;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Gym Classes Section -->
+    <section class="classes" id="classes">
+        <h2>Our Gym Classes</h2>
+        <div class="class-grid">
+            <!-- Class Item 1 -->
+            <div class="class-item">
+                <div class="class-title">Yoga & Mindfulness</div>
+                <p class="class-description">
+                    A calm and meditative class that focuses on flexibility, balance, and mental clarity.
+                    Ideal for all levels to reduce stress and improve overall well-being.
+                </p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+            <!-- Class Item 2 -->
+            <div class="class-item">
+                <div class="class-title">Strength Training</div>
+                <p class="class-description">
+                    Build muscle and increase strength in this dynamic, weight-focused class.
+                    Perfect for those looking to tone and enhance physical performance.
+                </p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+            <!-- Class Item 3 -->
+            <div class="class-item">
+                <div class="class-title">High-Intensity Interval Training (HIIT)</div>
+                <p class="class-description">
+                    An intense workout that combines cardio and strength exercises for maximum results.
+                    Ideal for those looking to burn calories fast and boost stamina.
+                </p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+            <!-- Class Item 4 -->
+            <div class="class-item">
+                <div class="class-title">Zumba</div>
+                <p class="class-description">
+                    Dance your way to fitness with fun, fast-paced moves to Latin-inspired music.
+                    A fantastic way to enjoy cardio without feeling like a workout.
+                </p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+            <!-- Class Item 5 -->
+            <div class="class-item">
+                <div class="class-title">Cycling</div>
+                <p class="class-description">
+                    High-energy cycling classes set to energizing music for maximum calorie burn.
+                    Great for cardio and endurance, no matter your fitness level.
+                </p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+
+            <!-- Class Item 6 -->
+            <div class="class-item">
+                <div class="class-title">Pilates</div>
+                <p class="class-description">
+                    A low-impact class that focuses on core strength, flexibility, and controlled movement.
+                    Ideal for improving posture and muscle tone.
+                </p>
+                <a href="#" class="join-btn">Join Now</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
